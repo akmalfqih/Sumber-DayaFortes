@@ -1,0 +1,411 @@
+*{
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url("/image/gradasi\ new\ 2.png");
+  transition: background-color .7s ease-in-out;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 60px;
+  scale: 0;
+  width: 200px;
+  object-fit: contain;
+  
+}
+.navbar.scrolled {
+  background-color: rgb(12, 45, 138);     
+  margin:0px;
+  
+  .logo img{
+    scale: 1.1;
+  }
+}
+
+.nav-links {
+  font-size: 21px;
+  margin-top: -50px;
+  margin-left: auto; /* Menggunakan "auto" untuk menggeser ke kanan */
+  display: flex; /* Menampilkan link dalam satu baris */
+  align-items: center; /* Mengatur penempatan vertikal ke tengah */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+  /* transition: .2s; */
+}
+
+.nav-links a:hover{
+  color: black;
+  background-color: #fff;
+}
+
+.nav-links a i {
+  margin-right: 10px;
+}
+
+.nav-links .about-link {
+  margin-left: 700px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
+  padding: 10px;
+}
+
+.nav-links .contact-link {
+  margin-left: 60px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
+  padding: 10px;
+}
+
+.nav-links a::before {
+  content: "";
+  display: none;
+}
+
+.nav-links a.contact-link {
+  border: 2px solid rgb(223, 203, 203); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Hubungi kami" */
+  /* margin-left: 600px; */
+}
+
+.nav-links a.about-link {
+  border: 2px solid rgb(216, 206, 206); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Tentang kami" */
+  /* margin-left: 200px; */
+  /* margin-right: -700px; */
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+/* AKHIR NAVBAR */
+
+/* JUMBOTRON */
+.jumbotron{
+  background-image: url("/image/gradasi\ new\ 2.png");
+  margin-top: -20px;
+}
+
+
+.lampu-text{
+  padding-right: 70px;
+}
+
+.lampu img{
+  width: 660px;
+  margin-left: 40px;
+}
+
+
+
+.button-container {
+  display: flex;
+  margin: 10px;
+  /* justify-content: space-betwee; */
+}
+
+.button-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.perbaikan{
+  margin-left: 10px;
+}
+
+.geser{
+  margin-top: 70px;
+  margin-right: 120px;
+  width: 70%;
+  height: auto;
+}
+
+.perbaikan img{
+  margin-left: 80px;
+  transition: .5s;
+  border-radius: 10%;
+}
+
+.instalasi img{
+  height: 100%;
+  transition: .5s;
+  border-radius: 10%;
+
+}
+
+.instalasi img:hover{
+  transform: scale(1.2);
+  border: 4px rgb(255, 255, 255) solid;
+  box-shadow: 4px 4px 3px 4px rgba(0, 0, 0, 0.2);
+  
+  
+}
+.perbaikan img:hover{
+  transform: scale(1.3);
+  border: 4px rgb(255, 255, 255) solid;
+  box-shadow: 4px 4px 3px 4px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+
+
+
+
+/* SECTION 2 */
+
+
+.section_2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(12, 45, 138);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section_2 .row {
+  justify-content: space-between;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.feature-item h1 {
+  color: rgb(12, 45, 138);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: rgb(12, 45, 138);
+  font-size: 18px;
+}
+
+
+
+
+/* SECTION 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Styles */
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Section 3 Styles */
+.section_3 {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.section_3 h1 {
+  margin-bottom: 40px;
+  
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color:  #03C988;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  transition: .4s;
+}
+
+.testimonial:hover{
+  transform: scale(1.1);
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 50%;
+}
+.testimonial-img:hover{
+  transform: scale(1.2);
+}
+
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial h3 {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000; /* Atau warna sesuai dengan latar belakang */
+}
+
+.testimonial p {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #ffffff; /* Atau warna sesuai dengan latar belakang */
+}
+
+  
+  
+
+
+
+/* AKHIR SLIDER */
+
+
+.section_4{
+  background-color: rgb(12, 45, 138);
+  padding-bottom: 30px;
+}
+
+.gambar img {
+  margin: 50px 0 10px 170px;
+  width: 60%;
+  height: auto;
+  border-radius: 10%;
+  transition: transform 0.5s ease;
+}
+
+.gambar img:hover {
+  transform: scale(1.1);
+
+}
+
+
+.section_4 h1{
+  color: white;
+}
+
+.section_4 h4{
+  color: white;
+}
+
+
+.google-maps {
+  display: flex;
+  align-items: center;
+}
+
+.maps-text {
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+  color: white;
+}
+
+.maps-text i {
+  margin-right: 5px;
+}
+
+
+@media (max-width: 78px) {
+  .slider {
+    width: 50%;
+  }
+  .slider .slick-slide {
+    width: 10%;
+  }
+  .slider .slick-nav {
+    display: none;
+  }
+}
+
+.siu h1{
+  color: #03C988;
+}

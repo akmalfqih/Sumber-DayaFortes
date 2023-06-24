@@ -1,0 +1,360 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.part-1{
+    background-color: rgb(12, 45, 138);
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url("/image/gradasi\ new\ 2.png");
+  transition: background-color .7s ease-in-out;
+}
+
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 60px;
+  scale: 0;
+  width: 200px;
+  object-fit: contain;
+
+}
+.navbar.scrolled {
+  background-color: rgb(12, 45, 138); /* Ganti dengan warna latar belakang yang diinginkan */
+  .logo img{
+    scale: 1.1;
+  }
+}
+
+.nav-links {
+  font-size: 21px;
+  margin-top: -50px;
+  margin-left: auto; /* Menggunakan "auto" untuk menggeser ke kanan */
+  display: flex; /* Menampilkan link dalam satu baris */
+  align-items: center; /* Mengatur penempatan vertikal ke tengah */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+  transition: .2s;
+}
+
+.nav-links a:hover{
+  color: black;
+  background-color: #fff;
+}
+
+.nav-links a i {
+  margin-right: 10px;
+}
+
+.nav-links .about-link {
+  margin-left: 700px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
+  padding: 10px;
+}
+
+.nav-links .contact-link {
+  margin-left: 60px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
+  padding: 10px;
+}
+
+.nav-links a::before {
+  content: "";
+  display: none;
+}
+
+.nav-links a.contact-link {
+  border: 2px solid rgb(223, 203, 203); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Hubungi kami" */
+  /* margin-left: 600px; */
+}
+
+.nav-links a.about-link {
+  border: 2px solid rgb(216, 206, 206); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Tentang kami" */
+  /* margin-left: 200px; */
+  /* margin-right: -700px; */
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+}
+/* AKHIR NAVBAR */
+
+/* AWAL SECTION 1 */
+
+.part-1{
+  margin-top: -20px;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.judul h1 {
+  font-size: 70px;
+  background-color: #03c988;
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 50px 170px;
+}
+
+/* PENTING */
+.one img{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: -41px;
+  transition: 1.2s;
+  border-radius: 25%;
+  scale: 1;
+}
+
+.one img:hover{
+  border-radius: 0%;
+  transform: scale(1.1);
+  /* transform: rotate(360deg); */
+}
+
+
+.two img{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: 65px;
+  transition: 1.2s;
+  border-radius: 25%;
+  scale: 1;
+}
+.two img:hover{
+  border-radius: 0%;
+  transform: scale(1.1);
+}
+.three img{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: 65px;
+  transition: 1.2s;
+  border-radius: 25%;
+  scale: 1;
+}
+.three img:hover{
+  border-radius: 0%;
+  transform: scale(1.1);
+}
+
+.caption {
+  background-color: rgb(202, 209, 243);
+  padding: 20px;
+  margin-top: 30px;
+  transition: 0.4s;
+  border-radius: 10%;
+  margin-top: 20px;
+}
+
+.caption:hover{
+  border-radius: 0%;
+  scale: 1.1;
+}
+
+.caption h1 {
+  text-align: center;
+  background-color: #03C988;
+  color: antiquewhite;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0%;
+}
+
+.capt1{
+  margin-top: 40px;
+}
+.capt2{
+  margin-top: 110px;
+}
+.capt3{
+  margin-top: 110px;
+  margin-bottom: 90px;
+}
+
+.caption p {
+  margin-top: 20px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* AKHIR PENTING */
+
+
+
+/* AWAL HUBUNGI KAMI */
+.contact-us {
+  background-color: #03C988 ;
+  color: #fff;
+  padding: 20px;
+  margin-left: -14px;
+  margin-right: -14px;
+}
+.hubungi{
+  margin-left: 60px;
+}
+
+.kolicon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0C2D8A;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.6s ease;
+}
+
+.contact-icon:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.contact-icon i {
+  margin-right: 10px;
+  font-size: 34px;
+}
+
+.contact-icon span {
+  font-weight: bold;
+}
+
+.kolicon{
+  margin-top: 20px;
+  margin-left: -200px;
+}
+
+/* AKHIR HUBUNGI KAMI */
+
+/* section 3 */
+
+.contact{
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.baris h1{
+  color: white;
+}
+
+.form-group label {
+  color: rgb(254, 250, 250);
+  font-size: 16px;
+}
+
+
+/* AKHIR */
+
+
+/* SECTION 4 */
+.section_4{
+    background-color: #03C988;
+    padding-bottom: 30px;
+    margin-left: -13px;
+    margin-right: -13px;
+
+  }
+  
+  .gambar img {
+    margin: 50px 0 10px 170px;
+    width: 60%;
+    height: auto;
+    border-radius: 10%;
+    transition: transform 0.6s ease;
+  }
+  
+  .gambar img:hover {
+    transform: scale(1.2);
+  
+  }
+
+  .section_4 h1{
+    color: #0C2D8A;
+    font-weight: bold;
+  }
+  
+  .section_4 h4{
+    color: white;
+  }
+
+  
+  .google-maps {
+    display: flex;
+    align-items: center;
+  }
+  
+  .maps-text {
+    display: flex;
+    align-items: center;
+    margin-left: 280px;
+    color: white;
+  }
+  
+  .maps-text i {
+    margin-right: 5px;
+  }
+  
+
+  
+
+
+  
+  

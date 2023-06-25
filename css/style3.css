@@ -2,29 +2,23 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  font-family:"Poppins";
 }
 
+body, h1, h2, h3, h4, h5, h6, p, label, button, input, select, textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
 .part-1{
-  background-color: rgb(210, 246, 201);
+  background-color: #ffffff;
   overflow: hidden;
   margin-top: -20px;
 }
 
-.judul{
-  text-align: center;
-  margin-bottom: 30px;
-  color: antiquewhite;   
-}
 
-.judul h1{
-font-size: 70px;
-background-color: #03C988;
-margin-left: -40px;
-margin-right: -40px;
-margin-top: 0;
-padding-top: 20px;
-padding-bottom: 20px;
-}
+
 
 
 /* NAVBAR */
@@ -39,8 +33,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-image: url("/image/gradasi\ new\ 2.png");
-  transition: background-color .7s ease-in-out;
+  background-color: rgb(255, 255, 255) ;
+  transition:  .7s ease-in-out;
 }
 
 
@@ -138,19 +132,21 @@ header {
 }
 
 .judul h1 {
-  font-size: 70px;
-  background-color: #03c988;
+  font-size: 80px;
+  background-color: #ffffff;
   margin-left: -40px;
   margin-right: -40px;
   margin-top: 0;
   padding-top: 30px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #0b0808;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 30px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.16);
   margin: 50px 170px;
+  color: rgb(12, 45, 138);
+  font-weight: bold;
 }
 
 .one img{
@@ -179,10 +175,12 @@ header {
   border-radius: 25%;
   scale: 1;
 }
+
 .two img:hover{
   border-radius: 0%;
   transform: scale(1.1);
 }
+
 .three img{
   width: 400px;
   height: 400px;
@@ -198,12 +196,13 @@ header {
 }
 
 .caption {
-background-color: rgb(202, 209, 243);
+background-color: rgb(255, 255, 255);
 padding: 20px;
 margin-top: 30px;
 transition: 0.4s;
 border-radius: 10%;
 margin-top: 20px;
+box-shadow: 1px 1px 3px 1px inset;
 }
 
 .caption:hover{
@@ -217,11 +216,12 @@ scale: 1.1;
 
 .caption h1 {
 text-align: center;
-background-color: #03C988;
-color: antiquewhite;
+
+color:  #03C988;
 padding: 10px;
 margin: 0;
 border-radius: 0%;
+font-weight: bold;
 }
 
 .capt1{
@@ -354,8 +354,9 @@ font-size: 16px;
 }
 
 .section_4 h1{
-  color:  rgb(12, 45, 138);
+  color:  rgb(255, 255, 255);
   font-weight: bold;
+  /* font-size: 40px; */
 }
 
 .section_4 h4{

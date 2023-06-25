@@ -1,8 +1,25 @@
 *{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
-  }
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p, span, a {
+  font-family: "Poppins", sans-serif;
+}
+
+
   
 .part-1{
     background-color: rgb(12, 45, 138);
@@ -22,7 +39,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-image: url("/image/gradasi\ new\ 2.png");
+  /* background-image: url("/image/gradasi\ new\ 2.png"); */
   transition: background-color .7s ease-in-out;
 }
 
@@ -125,8 +142,8 @@ header {
 }
 
 .judul h1 {
-  font-size: 70px;
-  background-color: #03c988;
+  font-size: 80px;
+  /* background-color: #03c988; */
   margin-left: -40px;
   margin-right: -40px;
   margin-top: 0;
@@ -327,7 +344,7 @@ header {
   }
 
   .section_4 h1{
-    color: #0C2D8A;
+    color: #ffffff;
     font-weight: bold;
   }
   
@@ -355,6 +372,17 @@ header {
 
   
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p, span, a {
+  font-family: "Poppins", sans-serif;
+}
 
   
   

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Sumber Daya Fortes</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    </head>
+
+    <body>
+        <section class="signup-login-section">
+            <div class="container">
+              <div class="signup-login-box">
+                <div class="signup-login-toggle">
+                  <button class="toggle-button active" onclick="toggleForm('signup')">Sign Up</button>
+                  <button class="toggle-button" onclick="toggleForm('login')">Login</button>
+                </div>
+
+                <form id="signup-form" class="form" style="display: block;" action="index.html" onsubmit="return validatePassword()">
+                  <h2 class="form-title judul">Gratis Daftar Akun</h2>
+                  <input type="text" placeholder="Nama">
+                  <input type="email" placeholder="Alamat Email">
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password" id="password">
+                  <input type="password" placeholder="Konfirmasi Password" id="confirm-password">
+                  <button type="submit">Daftar</button>
+                </form>
+                
+                <form id="login-form" class="form" style="display: none;" action="index.html">
+                  <h2 class="form-title judul">Masuk</h2>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <button type="submit">Masuk</button>
+                </form>
+
+              </div>
+            </div>
+        </section>
+          
+    
+      <script>
+        function toggleForm(formType) {
+            var signupForm = document.getElementById("signup-form");
+            var loginForm = document.getElementById("login-form");
+            var signupButton = document.getElementsByClassName("toggle-button")[0];
+            var loginButton = document.getElementsByClassName("toggle-button")[1];
+            
+            if (formType === "signup") {
+              signupForm.style.display = "block";
+              loginForm.style.display = "none";
+              signupButton.classList.add("active");
+              loginButton.classList.remove("active");
+            } else {
+              signupForm.style.display = "none";
+              loginForm.style.display = "block";
+              signupButton.classList.remove("active");
+              loginButton.classList.add("active");
+            }
+          }
+
+          function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+          
+            if (password !== confirmPassword) {
+              alert("Password dan konfirmasi password harus sama!");
+              return false;
+            }
+          
+            // Pengalihan ke halaman index.html setelah formulir berhasil divalidasi
+            window.location.replace("index.html");
+          
+            return true;
+          }
+          
+      </script>
+  </body>
+
+  

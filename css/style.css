@@ -29,7 +29,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: white;
+  background-image: url("https://lh3.googleusercontent.com/bGk-qdP44m0CrxcVsqPzw5fJOASfjFdKSgX91_BDtRmyCpP4L7eZpcyY-_WqkUDYi0g5LjRiOQIqa6MplIKEYu87_2SvZjzEnHZ6hPNMqw");
+  background-size: cover;
   transition: background-color .7s ease-in-out;
   top: 0;
   right: 0;
@@ -38,22 +39,23 @@ header {
 
 
 .logo {
-  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .logo img {
-  height: 60px;
+  height: 70px;
   scale: 0;
   width: 200px;
   object-fit: contain;
   
 }
 .navbar.scrolled {
+  background-image: none;
   background-color: rgb(12, 45, 138);     
   margin:0px;
   
   .logo img{
-    scale: 1.1;
+    scale: 1.3;
   }
 }
 
@@ -70,6 +72,7 @@ header {
   text-decoration: none;
   margin-left: 20px;
   position: relative;
+  margin-top: -30px;
   /* transition: .2s; */
 }
 
@@ -80,16 +83,25 @@ header {
 
 .nav-links a i {
   margin-right: 10px;
+ 
+}
+
+.signup-link i{
+  margin-left: 17px;
 }
 
 .nav-links .about-link {
-  margin-left: 700px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
+  margin-left: 830px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
   padding: 10px;
 }
 
 .nav-links .contact-link {
   margin-left: 60px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
   padding: 10px;
+}
+.nav-links .signup-link {
+  margin-left: 60px; /* Menambahkan jarak yang lebih jauh antara ikon telepon dan "Tentang kami" */
+  padding: 10px 5px 10px 5px;
 }
 
 .nav-links a::before {
@@ -99,11 +111,19 @@ header {
 
 .nav-links a.contact-link {
   border: 2px solid rgb(223, 203, 203); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Hubungi kami" */
+  border-radius: 10%;
   /* margin-left: 600px; */
 }
 
 .nav-links a.about-link {
   border: 2px solid rgb(216, 206, 206); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Tentang kami" */
+  border-radius: 10%;
+  /* margin-left: 200px; */
+  /* margin-right: -700px; */
+}
+.nav-links a.signup-link {
+  border: 2px solid rgb(216, 206, 206); /* Ubah sesuai dengan warna border yang diinginkan untuk link "Tentang kami" */
+  border-radius: 10%;
   /* margin-left: 200px; */
   /* margin-right: -700px; */
 }
@@ -137,7 +157,8 @@ header {
 
 /* JUMBOTRON */
 .jumbotron{
-  background-image: url("/image/bg\ web.png");
+  background-image: url("https://lh3.googleusercontent.com/bGk-qdP44m0CrxcVsqPzw5fJOASfjFdKSgX91_BDtRmyCpP4L7eZpcyY-_WqkUDYi0g5LjRiOQIqa6MplIKEYu87_2SvZjzEnHZ6hPNMqw");
+  background-size: cover;
   margin-top: -20px;
   
 }
@@ -145,6 +166,10 @@ header {
 
 .lampu-text{
   padding-right: 70px;
+}
+
+.lampu-text h1{
+  font-weight: 400;
 }
 
 .lampu img{
@@ -289,6 +314,9 @@ header {
 
 .section_3 h1 {
   margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 50px;
   
 }
 
@@ -337,7 +365,7 @@ header {
   
   font-size: 24px;
   font-weight: bold;
-  color: #000000; /* Atau warna sesuai dengan latar belakang */
+  color: #ffffff; /* Atau warna sesuai dengan latar belakang */
 }
 
 .testimonial p {
